@@ -1,0 +1,253 @@
+body {
+    background-color: rgb(234, 246, 246, 1);
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+
+/*----------------horizontal line style------------*/
+hr {
+    background-color: #EAF6F6; 
+    border-style: none none dotted none;
+    border-width: 5px;
+    width: 7%;
+    border-color: rgb(139, 130, 130);
+    transition-duration: 0.8s;
+    margin-top: 60px;
+}
+
+hr:hover {
+    width: 40%;
+    border-color: rgb(122, 196, 167);
+    cursor: pointer;
+}
+
+/*----------------Navigation bar style------------*/
+.nav {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 1;
+    background-color: rgb(191, 206, 206);
+}
+
+.nav ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    list-style: none;
+}
+
+.nav a {
+    display: inline-block;
+    height: 50px;
+}
+
+.left-icon {
+    width: 50px;
+}
+
+.nav li {
+    height: 50px;
+    display: inline-block;
+}
+
+.left-icon:hover {
+    background-color: rgba(159, 173, 173, 0.5);
+    border-radius: 10px;
+}
+
+.dropdown-list-item {
+    float: right;
+}
+
+.dropdown-image {
+    width: 50px;   
+}
+
+.dropdown-image:hover {
+    background-color: rgba(159, 173, 173, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    height: 50px;
+    display: none;
+}
+
+.dropdown-list-item a {
+    display: block;
+    padding-top: 2px;
+}
+
+.dropdown-content img {
+    width: 50px;
+}
+
+.dropdown-list-item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content img:hover {
+    opacity: 0.5;
+}
+
+
+/*----------------landscape style------------*/
+.landscape {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding-top: 110px;
+    transition: 0.5s;
+}
+
+.landscape:hover {
+    background-color: rgba(81, 92, 92, 0.5);
+    border-radius: 10px;
+}
+
+.landscape:hover .thunder-cloud {
+    -webkit-animation-name: mymove;
+    animation-name: mymove;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    filter: contrast(50%);
+}
+
+.landscape:hover .top-cloud {
+    -webkit-animation-name: mymove;
+    animation-name: mymove;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    filter: contrast(50%);
+}
+
+.landscape:hover .bot-cloud {
+    -webkit-animation-name: mymove;
+    animation-name: mymove;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    filter: contrast(50%);
+}
+
+.landscape:hover .web-dev {
+    -webkit-animation-name: title;
+    animation-name: title;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
+    color: aliceblue;
+}
+
+.landscape:hover .shooting-star {
+    -webkit-animation-name: mymove;
+    animation-name: mymove;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+
+@keyframes title {
+    0% {
+        color: black;
+    }
+    25% {
+        color: aliceblue;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        filter: aliceblue;
+    }
+    100% {
+        color: rgb(253, 253, 253);
+    }
+}
+
+@keyframes mymove {
+    0% {
+        filter: contrast(50%);
+    }
+    25% {
+        filter: contrast(150%);
+    }
+    50% {
+
+        filter: contrast(50%);
+    }
+    75% {
+        filter: contrast(150%);
+    }
+    100% {
+    }
+}
+
+
+.landscape:hover .shooting-star {
+    background: url(Icons/dropdown.png);
+    filter: contrast(200%);
+    transition: 1s;
+}
+
+.landscape:hover .top-cloud {
+    filter: contrast(10%);
+    transition: 1s;
+}
+
+.landscape:hover .bot-cloud {
+    filter: contrast(10%);
+    transition: 1s;
+}
+
+.landscape:hover .mountain {
+    filter: brightness(60%);
+    transition: 1s;
+}
+
+.shooting-star {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    max-width: 6%;
+}
+
+.thunder-cloud {
+    position: absolute;
+    top: 50px;
+    left: 45%;
+    animation-name: thunder;
+    animation-duration: 7s;
+    width: 50px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 40px;
+    right: 70%;
+    max-width: 20%;
+}
+
+.bot-cloud {
+    position: absolute;
+    right: 20%;
+    max-width: 20%;
+}
+
+.mountain {
+    max-width: 100%;
+}
+.landscape h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+}
+
+.landscape h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
+/*----------------------Personal Statement-------------------*/
